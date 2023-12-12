@@ -1,13 +1,20 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .models import Libro
+from .models import Equipo
 from .forms import libroForm
 # Create your views here.
 
 def inicio(request):
     return render(request, 'paginas/inicio.html')
+
 def nosotros(request):
     return render(request, 'paginas/nosotros.html')
+
+def equipo(request):
+    equipo = Equipo.objects.all()
+    print(equipo)
+    return render(request, 'paginas/equipo.html', {'equipo': equipo})
 
 def libros(request):
     libros = Libro.objects.all()
