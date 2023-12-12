@@ -1,0 +1,32 @@
+:root {
+    --custom-text-color: #FFF;
+    --box-shadow-nosotros: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.custom_text_color {
+    color: var(--custom-text-color);
+}
+
+.custom_navbar_text_color {
+    color: var(--custom-text-color);
+}
+
+.about-section {
+    padding: 100px 0;
+}
+
+.about-section img {
+    border-radius: 10px;
+    box-shadow: var(--box-shadow-nosotros);
+}
+
+.about-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
