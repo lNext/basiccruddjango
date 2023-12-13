@@ -1,7 +1,7 @@
 :root {
     --custom-text-color: #FFF;
     --box-shadow-nosotros: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
-    --navbar-background-color: #131C31;
+    --footer-background-color: #131C31;
 }
 
 .custom_text_color {
@@ -33,7 +33,7 @@
 }
 
 footer div{
-    background: var(--navbar-background-color);
+    background: var(--footer-background-color);
     color: var(--custom-text-color);
     margin-top: 10px;
 }
