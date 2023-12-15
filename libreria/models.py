@@ -22,7 +22,7 @@ class Equipo(models.Model):
     cargo = models.TextField(verbose_name="Cargo", null=True)
 
     def __str__(self):
-        fila = "Nombre: " + self.nombre + " - " + self.cargo
+        fila = "Nombre: " + self.nombre + " - " + 'Cargo: ' + self.cargo
         return fila
     
     def delete(self, using=None, keep_parents=False):
